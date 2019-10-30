@@ -13,7 +13,6 @@
 btnLogin.onclick=function(){
     req1 = ""
     req1 = Ajax("https://radlab.creighton.edu/appStudio/authLDAP.php", "POST", "j_username=" + inptNetID.value + "&j_password=" + inptPassword.value);
-  //req1 = Ajax("https://otis.creighton.edu/authLDAP_3.php", "POST", "j_username=" + TextBox1.value + "&j_password=" + PasswordInput1.value);
     if (req1.status == 200) { //everything worked.
         lblWelcome.style.display = "block"  // none to hide
         lblResult.style.display = "block"  // none to hide
